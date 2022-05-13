@@ -69,8 +69,7 @@ export default function RequestPayment(props) {
               {...formik.getFieldProps("token")}
             >
               <MenuItem value="NEON">NEON</MenuItem>
-              <MenuItem value="ETH">ETH</MenuItem>
-              <MenuItem value="XRP">XRP</MenuItem>
+              <MenuItem value="ETH">ETH</MenuItem> 
             </Select>
           </FormControl>
         </Box>
