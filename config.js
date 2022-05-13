@@ -1,0 +1,3 @@
+const agreementAddress= '0xdEAAc8229480971bA125f831137984F07A2B9344'; 
+const biconomyAgreement= "0xc352EC50cf2117ae8103fcd2d9E4EC6ebe46F9Ff";
+const agreementAdressNeon='0xdEAAc8229480971bA125f831137984F07A2B9344';
