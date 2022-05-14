@@ -103,7 +103,7 @@ function Agreement() {
         open={handleClickOpen}
         close={handleClose}
         op={open}
-        acc={account}
+        acc={user && user.attributes.ethAddress}
         loading={loading}
       />
       <Container pl={0} pr={0}>

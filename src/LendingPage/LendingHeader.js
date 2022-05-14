@@ -105,20 +105,29 @@ export default function LendingHeader() {
               variant="outlined"
               style={{ margin: "0 5px" }}
             >
-              Dashboard
+             Dashboard
             </Button>
+            {
+              user == null &&  <Button
+              style={{ margin: "0 5px" }}
+              variant="contained"
+              onClick={  () => {
+                 web3Auth();  
+              }}
+            >
+              Web3Auth
+            </Button>
+            }
 
             {user == null ? ( 
-              
-               <Button
-               variant="contained"
-               onClick={  () => {
-                  web3Auth();  
-               }}
-             >
-               Connect
-             </Button> 
-
+                <Button
+                variant="contained"
+                onClick={async () => {
+                  await authenticate();  
+                }}
+              >
+               Connect Wallet
+              </Button>  
             ) : (
               <Button variant="outlined">
                 {user &&

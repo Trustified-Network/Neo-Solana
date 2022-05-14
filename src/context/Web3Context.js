@@ -15,8 +15,7 @@ export const Web3ContextProvider = (props) => {
 
     const web3Auth = async () => {
        await authenticate({
-            provider: 'web3Auth',
-            chainId: Moralis.Chains.POLYGON_MUMBAI,
+            provider: 'web3Auth',  
             clientId: 'BBENwjOPTAuM5OJ3bWkmkhpig5Z67iLKCUeDLy-JF6dv4PkYHnwWfL4NQU3S2LscSEV4g-dsUjDj4NgbCgUot4s',
             appLogo: '/images/trustifiednetwork-logo.png',
             loginMethodsOrder: ["google", "facebook", "twitter", "reddit", "github", "linkedin", "email_passwordless"]
@@ -28,6 +27,7 @@ export const Web3ContextProvider = (props) => {
     useEffect(() => {
         if (isAuthenticated) {
             setAccount(account);
+            navigate("/dashboard/app");
         }
         checkIfWalletIsConnected(); 
     }, [isAuthenticated, account])
