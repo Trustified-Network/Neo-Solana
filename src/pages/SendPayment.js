@@ -108,7 +108,9 @@ export default function SendPayment(props) {
               {...formik.getFieldProps("token")}
             >
               <MenuItem value="NEON">NEON</MenuItem>
-              <MenuItem value="ETH">ETH</MenuItem> 
+              <MenuItem value="USDC">USDC(NEON)</MenuItem> 
+              <MenuItem value="USDT">USDT(NEON)</MenuItem> 
+              <MenuItem value="xDAI">xDAI(NEON)</MenuItem> 
             </Select>
           </FormControl>
         </Box>

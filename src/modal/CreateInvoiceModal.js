@@ -323,12 +323,12 @@ function CreateInvoiceModal(props) {
                         }}
                       >
                         <MenuItem value="ETH">ETH</MenuItem>
-                        <MenuItem value="MATIC">MATIC</MenuItem>
-                        <MenuItem value="USDT">USDT</MenuItem>
-                        <MenuItem value="USDC">USDC</MenuItem>
+                        <MenuItem value="Neon">Neon</MenuItem>
+                        <MenuItem value="Usdt">Usdt(Neon)</MenuItem>
+                        <MenuItem value="Usdc">Usdc(Neon)</MenuItem>
                       </Select>
                     </FormControl>
-                    {(selectedToken == "MATIC" || selectedToken == "ETH") && (
+                    {(selectedToken == "Neon" || selectedToken == "ETH") && (
                       <FormHelperText
                         style={{ fontWeight: "bold", color: "black" }}
                       >
@@ -349,7 +349,7 @@ function CreateInvoiceModal(props) {
                         {...formik.getFieldProps("network")}
                       >
                         <MenuItem value="ethereum">Ethereum</MenuItem>
-                        <MenuItem value="polygon">Polygon</MenuItem>
+                        <MenuItem value="Neon">Neon</MenuItem>
                       </Select>
                     </FormControl>
                   </Grid>
