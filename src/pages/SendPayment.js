@@ -110,7 +110,7 @@ export default function SendPayment(props) {
               <MenuItem value="NEON">NEON</MenuItem>
               <MenuItem value="USDC">USDC(NEON)</MenuItem> 
               <MenuItem value="USDT">USDT(NEON)</MenuItem> 
-              <MenuItem value="xDAI">xDAI(NEON)</MenuItem> 
+              <MenuItem value="wDAI">wDAI(NEON)</MenuItem> 
             </Select>
           </FormControl>
         </Box>
