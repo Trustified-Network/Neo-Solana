@@ -26,7 +26,34 @@
  
 **Web3Auth:** Used Web3Auth for seamless user on boarding with it's non-custodial auth infrastructure. 
 
-**WAGMI 😊🚀∞**
+## Homepage
+![Screenshot 2022-05-15 at 12 37 54 AM](https://user-images.githubusercontent.com/45895007/168445378-084aed6c-a2ca-4a7f-8958-abcce9ed27c0.png)
+
+## Web3Auth
+![Screenshot 2022-05-15 at 12 38 25 AM](https://user-images.githubusercontent.com/45895007/168445396-f7661c90-7d95-4592-8852-7bad94d3f31c.png)
+
+## Escrow Agreement
+
+![screencapture-trustified-network-dashboard-agreement-2022-05-15-00_36_25](https://user-images.githubusercontent.com/45895007/168445460-e1b5273b-707a-42ad-83a6-a7293afe7d0f.png)
+
+## Invoice
+
+![Screenshot 2022-05-15 at 12 42 40 AM](https://user-images.githubusercontent.com/45895007/168445485-b9a149b0-3db8-43b7-97c2-c22e50c082d8.png)
+
+## Product / Services
+
+![Screenshot 2022-05-15 at 12 42 17 AM](https://user-images.githubusercontent.com/45895007/168445499-d06ebe8e-2e8a-4a05-9ef1-d7bbb8de680c.png)
+
+## Crypto Payment
+
+![Screenshot 2022-05-15 at 12 37 16 AM](https://user-images.githubusercontent.com/45895007/168445507-ab0ad054-7f7b-456d-a477-f69a7db25e6e.png)
+
+## Analytics
+
+![Screenshot 2022-05-15 at 12 35 38 AM](https://user-images.githubusercontent.com/45895007/168445532-beda80f6-380b-44c2-9e5f-567c2d3c5287.png)
+
+
+## WAGMI 😊🚀∞
 
 
 
