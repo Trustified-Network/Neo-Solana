@@ -17,7 +17,7 @@ export const Web3ContextProvider = (props) => {
        await authenticate({
             provider: 'web3Auth',
             chainId: Moralis.Chains.POLYGON_MUMBAI,
-            clientId: process.env.REACT_APP_AUTH_KEY,
+            clientId: "BHSz4w00U0rQNbE85fhYKTpmz0uin4uGYF3ZW1CATDNlDLwGEygOewUqtDqWYQMk2fLAlhOAG0mRKba2sr1RNwo",
             appLogo: '/images/trustifiednetwork-logo.png',
             loginMethodsOrder: ["google", "facebook", "twitter", "reddit", "github", "linkedin", "email_passwordless"]
         });
