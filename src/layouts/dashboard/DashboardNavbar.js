@@ -79,7 +79,7 @@ export default function DashboardNavbar({ onOpenSidebar }) {
         >
           <AccountPopover />
 
-          <Button onClick={handleClickOpen}>Crosschain Bridge</Button>
+          {/* <Button onClick={handleClickOpen}>Crosschain Bridge</Button> */}
           <HyphenBridge open={handleClickOpen} close={handleClose} op={open} />
 
           {user == null ? (

@@ -1,6 +1,6 @@
 import React, { useState, createContext, useEffect, useCallback } from "react";
 import { NEONLABS } from '../network/Network';
-
+import { useNavigate } from "react-router-dom";
 import { useMoralis } from "react-moralis";
 import { ethers } from "ethers";
 import {  AgreementAddress, AgreementContractAbi, } from "src/contracts/config";
@@ -8,18 +8,20 @@ import {  AgreementAddress, AgreementContractAbi, } from "src/contracts/config";
 export const Web3Context = createContext(undefined);
 
 export const Web3ContextProvider = (props) => {
+    const navigate = useNavigate();
     const [address, setAddress] = useState('');
     const [accounts, setAccount] = useState(''); 
     const { Moralis, authenticate, account, isAuthenticated } = useMoralis();
 
     const web3Auth = async () => {
-        authenticate({
+       await authenticate({
             provider: 'web3Auth',
             chainId: Moralis.Chains.POLYGON_MUMBAI,
             clientId: process.env.REACT_APP_AUTH_KEY,
             appLogo: '/images/trustifiednetwork-logo.png',
             loginMethodsOrder: ["google", "facebook", "twitter", "reddit", "github", "linkedin", "email_passwordless"]
         });
+        navigate("/dashboard/app");  
     }
 
 

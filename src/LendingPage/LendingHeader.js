@@ -99,32 +99,26 @@ export default function LendingHeader() {
         <Toolbar disableGutters>
           <Logo />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}></Box>
-          <Box sx={{ flexGrow: 0 }}>
-            <Button
-              onClick={cryptoPayment}
-              variant="outlined"
-              style={{ margin: "0 5px" }}
-            >
-              Crypto Payment
-            </Button>
+          <Box sx={{ flexGrow: 0 }}> 
             <Button
               onClick={agreement}
               variant="outlined"
               style={{ margin: "0 5px" }}
             >
-              Escrow Agreement
+              Dashboard
             </Button>
 
-            {user == null ? (
-              <Button
-                variant="contained"
-                onClick={async () => {
-                  await authenticate();  
-                     navigate("/dashboard/app");  
-                }}
-              >
-                Connect
-              </Button>
+            {user == null ? ( 
+              
+               <Button
+               variant="contained"
+               onClick={  () => {
+                  web3Auth();  
+               }}
+             >
+               Connect
+             </Button> 
+
             ) : (
               <Button variant="outlined">
                 {user &&

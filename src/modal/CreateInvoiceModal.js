@@ -301,12 +301,28 @@ function CreateInvoiceModal(props) {
                   </Grid>
                 </Grid>
                 <Grid container spacing={24}>
+                <Grid item md={6} xs={6}>
+                    <FormControl fullWidth style={{
+                        paddingRight: "2vw",
+                      }}>
+                      <InputLabel id="demo-simple-select-label">
+                        Network
+                      </InputLabel>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        name="network"
+                        label="Network"
+                        {...formik.getFieldProps("network")}
+                      >
+                        <MenuItem value="ethereum">Ethereum</MenuItem>
+                        <MenuItem value="Neon">Neon</MenuItem>
+                      </Select>
+                    </FormControl>
+                  </Grid>
                   <Grid item md={6} xs={6}>
                     <FormControl
-                      fullWidth
-                      style={{
-                        paddingRight: "2vw",
-                      }}
+                      fullWidth 
                     >
                       <InputLabel id="demo-simple-select-label">
                         Token
@@ -336,23 +352,7 @@ function CreateInvoiceModal(props) {
                       </FormHelperText>
                     )}
                   </Grid>
-                  <Grid item md={6} xs={6}>
-                    <FormControl fullWidth>
-                      <InputLabel id="demo-simple-select-label">
-                        Network
-                      </InputLabel>
-                      <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        name="network"
-                        label="Network"
-                        {...formik.getFieldProps("network")}
-                      >
-                        <MenuItem value="ethereum">Ethereum</MenuItem>
-                        <MenuItem value="Neon">Neon</MenuItem>
-                      </Select>
-                    </FormControl>
-                  </Grid>
+                  
                 </Grid>
 
                 <label style={{ marginBottom: "-1vw", color: "grey" }}>

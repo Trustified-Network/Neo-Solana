@@ -49,26 +49,34 @@ export default function Lending() {
     <Fragment>
       <div className="container-fluid p-5">
         <div className="row">
-          <div className="col-8 mx-auto mt-5">
-          <p className="peragraph">Smart contract Assured,</p>
+          <div className="col-11 mx-auto mt-5">
+
+   
+          <p className="peragraph">Sell Digital Services <span
+                style={{
+                  color: " #5902EC",
+                }}
+              >
+               Globally.{" "}
+              </span></p>
             <p className="peragraph">
+            Accept {" "}
               <span
                 style={{
                   color: " #5902EC",
                 }}
               >
-               Escrow Agreement
-              </span>{" "}
-              and
+               Crypto Payments{" "}
+              </span>
+              without paying
               <span
                 style={{
                   color: " #5902EC",
                 }}
               >
                 {" "}
-                Payment
-              </span>{" "}
-              platform
+                Hefty Commissions.
+              </span>{" "} 
             </p>
           </div>
         </div>
@@ -180,7 +188,7 @@ export default function Lending() {
                   sx={{ opacity: 0.72 }}
                 >
                   Security of Ethereum network, Speed and Economic transactions
-                  of Polygon)
+                  of Neon)
                 </Typography>
               </RootStyle>
             </div>
