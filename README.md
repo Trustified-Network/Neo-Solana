@@ -1,4 +1,4 @@
-# Trustified.Network :  Sell Digital Services Globally. Accept Crypto Payments without paying Hefty Commissions. 🤝
+# Trustified.Network 
 
 ## Problem we are solving: 
 
@@ -18,7 +18,7 @@
 
 ## Tech Stack
 
-**NEON:** Used Neon Ethereum virtual machine to port our Ethereum based Dapp into Solana ecosystem.
+## NEON: Used Neon Ethereum virtual machine to port our Ethereum based Dapp into Solana ecosystem.
 
 ![Screenshot 2022-05-15 at 9 30 20 AM](https://user-images.githubusercontent.com/45895007/168456621-856606de-06b2-4ee6-87f6-4f730475efbd.png)
 
@@ -96,6 +96,7 @@ const web3Auth = async () => {
     }
 
 ```
+# Trustified.Network :  Sell Digital Services Globally. Accept Crypto Payments without paying Hefty Commissions. 🤝
 
 ## Homepage
 ![Screenshot 2022-05-15 at 12 37 54 AM](https://user-images.githubusercontent.com/45895007/168445378-084aed6c-a2ca-4a7f-8958-abcce9ed27c0.png)
