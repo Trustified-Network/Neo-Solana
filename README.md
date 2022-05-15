@@ -15,16 +15,87 @@
 **3) Send/Receive crypto payments in a reliable and secure way without paying hefty commissions to third parties.**
 
 **4) Trust Score: Rate your experience of working with each other and get rewarded for best Trust Score.**  
- 
-**1) Escrow Agreement** 
 
 ## Tech Stack
 
 **NEON:** Used Neon Ethereum virtual machine to port our Ethereum based Dapp into Solana ecosystem.
 
-**💾 IPFS/Filecoin NFT.Storage:** We are Using Web3.Storage, to permanently store all the details of user invoices and subscription service on decentralized storage. 
+![Screenshot 2022-05-15 at 9 30 20 AM](https://user-images.githubusercontent.com/45895007/168456621-856606de-06b2-4ee6-87f6-4f730475efbd.png)
+
+https://neonscan.org/address/0x0424e290a639e7b93eA37861e206B9E05a65b89F
+
+https://github.com/Trustified-Network/Neo-Solana/blob/master/src/network/Network.js
+
+```javascript
+
+const NEONLABS = {
+    chainId: '0x245022926',
+    chainName: "neonlabs",
+    rpcUrls: ["https://proxy.devnet.neonlabs.org/solana"],
+    nativeCurrency: {
+        name: "NEON",
+        symbol: "NEON",
+        decimals: 18,
+    },
+    blockExplorerUrls: ["https://neonscan.org"],
+} 
+export { NEONLABS };
+
+```
+
+**💾 IPFS/Filecoin web3.Storage:** We are Using Web3.Storage, to permanently store all the details of user invoices and subscription service on decentralized storage. 
+
+https://github.com/Trustified-Network/Neo-Solana/blob/master/src/modal/CreateSubscribtionModal.js
+
+```javascript
+
+function makeFileObjects(data) {  
+    const blob = new Blob([JSON.stringify(data)], {
+      type: "application/json",
+    });
+
+    const files = [new File([blob], "subscribtion_Details.json")];
+    return files;
+  }
+
+  async function onChange(e) {
+    setUploading(true);
+    const file = e.target.files[0];
+    try {
+      const fileIpfs = await saveFile("trustified", file, { saveIPFS: true });
+      const moralisFile = new Moralis.File("trustified_subscribtion", file);
+
+      setFileUrl(fileIpfs);
+      toast.success("Image uploaded Successfully!!");
+      setUploading(false);
+    } catch (error) {
+      setUploading(false);
+      toast.error("Error uploading file!!");
+      console.log("Error uploading file: ", error);
+    }
+  }
+
+```
+
+
  
 **Web3Auth:** Used Web3Auth for seamless user on boarding with it's non-custodial auth infrastructure. 
+
+https://github.com/Trustified-Network/Neo-Solana/blob/master/src/context/Web3Context.js
+
+```javascript
+
+const web3Auth = async () => {
+       await authenticate({
+            provider: 'web3Auth',  
+            clientId: 'BBENwjOPTAuM5OJ3bWkmkhpig5Z67iLKCUeDLy-JF6dv4PkYHnwWfL4NQU3S2LscSEV4g-dsUjDj4NgbCgUot4s',
+            appLogo: '/images/trustifiednetwork-logo.png',
+            loginMethodsOrder: ["google", "facebook", "twitter", "reddit", "github", "linkedin", "email_passwordless"]
+        });
+        navigate("/dashboard/app");  
+    }
+
+```
 
 ## Homepage
 ![Screenshot 2022-05-15 at 12 37 54 AM](https://user-images.githubusercontent.com/45895007/168445378-084aed6c-a2ca-4a7f-8958-abcce9ed27c0.png)
