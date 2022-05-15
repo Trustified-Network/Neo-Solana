@@ -8,11 +8,11 @@
 
 **Trustified.network** is a smart contract assured Escrow Agreement and Payment platform which helps individuals and businesses to grow globally and increase profit margins in four simple steps: 
 
-**1) List Products,Services or subscription packages.**
+**1) List Products,Services or subscription packages.** 
 
-**2) Create Escrow agreements with personalize terms as per customers.**
+**2) Create Escrow agreements with personalize terms as per customers.** 
 
-**3) Send/Receive crypto payments in a reliable and secure way without paying hefty commissions to third parties.**
+**3) Send/Receive crypto payments in a reliable and secure way without paying hefty commissions to third parties.** 
 
 **4) Trust Score: Rate your experience of working with each other and get rewarded for best Trust Score.**  
 
