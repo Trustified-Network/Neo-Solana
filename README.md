@@ -1,4 +1,4 @@
-# Trustified.Network :  A smart contract assured Escrow Agreement and Payment platform which helps individuals and businesses to grow globally and increase profit margins. 🤝
+# Trustified.Network :  Sell Digital Services Globally. Accept Crypto Payments without paying Hefty Commissions. 🤝
 
 ## Problem we are solving: 
 
